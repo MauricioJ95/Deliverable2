@@ -12,7 +12,7 @@ namespace Deliverable2
         static void Main(string[] args)
         {
             activity = new Activities();
-            string input;
+            string input = null;
 
             var isValidInput = false;
 
@@ -30,15 +30,17 @@ namespace Deliverable2
                 }
             }
 
+            var action = int.Parse(input);
 
             Console.WriteLine("How many people are you bringing with you?");
 
             input = Console.ReadLine();
 
-            var a = new Activities();
+            var numberOfPeople = int.Parse(input);
 
-            a.Task();
+            activity.Task(action, numberOfPeople);
 
+        Console.ReadKey();
         }
     }
 }
