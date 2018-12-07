@@ -16,12 +16,14 @@ namespace Deliverable2
         {
             Num = new[] { 1, 2, 3, 4 };
             Activity = new string[] { "Stock Car Racing", "Hiking", "Skydiving", "Taco Bell" };
-            Actions = new Dictionary<int, string>();
+            Actions = new Dictionary<int, string>
+            {
+                {1, "Stock car Racing"},
+                { 2, "Stock car Racing"},
+                { 3, "Stock car Racing"},
+                { 4, "Stock car Racing"}
+            };
 
-            Actions.Add(1, "Stock car Racing");
-            Actions.Add(2, "Stock car Racing");
-            Actions.Add(3, "Stock car Racing");
-            Actions.Add(4, "Stock car Racing");
         }
 
         public bool IsValidInput(string input)
